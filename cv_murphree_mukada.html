@@ -1,0 +1,269 @@
+<head>
+    <title>Murphree Mukada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@700;800&display=swap"
+          rel="stylesheet">
+    <style>
+        html, body {
+            margin: 15px auto 50px;
+            justify-content: center;
+            align-items: center;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+            font-feature-settings: 'liga';
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            width: 210mm;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 27px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+        }
+
+        h3 {
+            color: black;
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        section {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5em;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h2 {
+            margin: 10px auto 5px;
+        }
+
+        .experience h3:nth-child(2) {
+            margin-top: 0;
+        }
+
+        .experience h3:not(:nth-child(2)) {
+            margin-top: 40px;
+        }
+
+        .highlight span {
+            margin: 2px 1px;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: #E1F1F1;
+            text-decoration: none;
+            text-align: center;
+            color: #333333;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .intro {
+            color: #003366;
+            font-weight: 500;
+        }
+
+        .summary .intro {
+            color: #000;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<section class="header">
+    <h1>MURPHREE MUKADA</h1>
+    <h2>SOFTWARE ENGINEER</h2>
+    07872176703&nbsp;&nbsp;/&nbsp;&nbsp;mmukada@gmail.com&nbsp;&nbsp;/&nbsp;&nbsp;London - UK
+</section>
+<section class="summary">
+    <h2>SUMMARY</h2>
+    <span class="intro">
+        I am primarily a functional Scala and Java developer specializing in cloud-native containerized microservices, distributed applications, and big data.
+        I have a working knowledge of Python, C/C++, Kotlin, Android Development, TypeScript, JavaScript, and Svelte for web UIs. Interests include concurrent applications,
+        machine learning, and software architecture. My experience spans multiple industries, including Banking, Travel, Logistics, Broadcasting, and Media. I
+        am familiarizing myself with Scala ZIO, recent JDK features and exploring the Golang and Rust programming languages. I am naturally a problem solver and
+        excelled in Mathematics Olympiads. I hold an MSc in Advanced Software Engineering and several industry certifications.
+    </span>
+</section>
+<section class="experience">
+    <h2>WORK EXPERIENCE</h2>
+    <h3>NatWest Markets - Contract Software Engineer (May 2021 - June 2023)</h3>
+    <span class="intro">
+    Worked on Risk applications aimed at complying with the FRTB
+    regulation. These Scala + Spark applications are hosted on GCP, with DataProc, BigQuery, Cloud SQL, PubSub, Cloud
+    Logging, and Cloud Storage being the primary stack. Features include data mining, trade and market risk
+    analysis, stress-testing PL data, and regulatory reporting.
+    </span>
+    <ul>
+        <li>Implemented calculation orchestration engines in Spark that leverage native libraries via JNI. Critical sections were cleanly guarded by employing concurrency techniques such as Read-Write locks. Output was routed via PubSub to the persistence service.</li>
+        <li>Optimized a Scala + Spark application by minimizing memory usage, resulting in an 87% reduction
+            in resource consumption. This was achieved by utilizing
+            real-time monitoring with a memory profiler (Visual VM), capturing heap dumps, and analyzing them using the
+            Eclipse Memory Analyzer Tool (MAT). I presented the techniques to the programme for wider adoption.
+        </li>
+        <li>Contributed to the development of mediating containerized Java microservices responsible for assembling and dispatching
+            calculation requests via a REST API, as well as processing asynchronous progress updates.
+        </li>
+        <li>Contributed to a QA automation suite that conducts end-to-end tests to test for functional regression.
+        </li>
+        <li>Refined VM initialization scripts to ensure deterministic initialization of services and
+            alignment with logging best practices - e.g. compression, rotation, and purging. Used Terraform alongside Bash scripts
+        </li>
+    </ul>
+    <div class="highlight">
+        <span>Scala</span>.<span>CATS</span>.<span>Java</span>.<span>Spark</span>.<span>Multithreading</span>.<span>Concurrency</span>.<span>Distributed Systems</span>.<span>GCP Cloud</span>.<span>Big Data</span>.<span>Microservices</span>.<span>SQL</span>.<span>NoSQL</span>.<span>Docker</span>.<span>Kubernetes</span>.<span>Terraform</span>.<span>REST</span>.<span>DataProc</span>.<span>PubSub</span>.<span>BigQuery</span>.<span>CloudSQL</span>.<span>Cloud Logging</span>.<span>Cloud Storage</span>.<span>Python</span>.<span>GIT</span>.<span>Linux</span>.<span>TDD</span>.<span>BDD</span>.<span>JMX</span>.<span>Agile</span>.<span>Scrum</span>.<span>Pair Programming</span>.<span>Jira</span>.<span>Maven</span>.<span>TeamCity</span>
+    </div>
+    <h3>Lloyds Bank - Contract Software Engineer (Jan 2021 - May 2021)</h3>
+    <span class="intro">
+    Worked on Scala + Spark backend applications responsible for processing insurance data to
+    generate reports for the IFRS17 regulation. The fronting ingestion Java components leveraged Apache Ignite, relaying to the backend via Spark Streaming.
+    </span>
+    <ul>
+        <li>Implemented pipelines for ingesting ledger and reference data, computing and curating derivative
+            datasets for report generation and visualization. These processes leveraged Spark Streaming to read from the fontend, and KAFKA to house the intermediate results across the calculation hierarchy.
+        </li>
+        <li>Enhanced the Java ingestion modules to handle dynamic metadata represented as JSON headers embedded within
+            CSV data files. The metadata was propagated and materialized as dynamic columns in the respective target Phoenix tables.
+        </li>
+        <li>Prescribed the algorithm for a generic data enrichment framework that leverages Scala + Spark dataframes. The
+            architecture patterned a tree representation, with leaf nodes representing input sources and branch nodes
+            encapsulating the merge and enrichment logic.
+        </li>
+    </ul>
+    <div class="highlight">
+        <span>Scala</span>.<span>CATS</span>.<span>Java</span>.<span>Spark</span>.<span>Architecture</span>.<span>SQL</span>.<span>Kafka</span>.<span>Apache Ignite</span>.<span>Distributed Systems</span>.<span>Hadoop</span>.<span>HBase</span>.<span>Apache Phoenix</span>.<span>Apache Hive</span>.<span>GIT</span>.<span>Linux</span>.<span>TDD</span>.<span>BDD</span>.<span>Agile</span>.<span>Scrum</span>.<span>Maven</span>.<span>Jira</span>
+    </div>
+    <h3>Career Break / Personal Projects - (Jul 2018 - Dec 2020)</h3>
+    <span class="intro">
+    During this period, I pursued personal projects in the IoT space and underwent extensive training in Hardware Design, Real Time Operating Systems (RTOS), Swift, Kotlin, Android Development, AWS, and GCP. I also completed advanced Scala courses covering advanced functional programming concepts.
+    </span>
+    <ul></ul>
+    <div class="highlight">
+        <span>Electronics</span>.<span>Hardware Design</span>.<span>Altium Designer</span>.<span>PCB</span>.<span>IoT</span>.<span>Functional Scala</span>.<span>C</span>.<span>Swift</span>.<span>Kotlin</span>.<span>Reactive Programming</span>.<span>RxKotlin</span>.<span>Android</span>.<span>RTOS</span>.<span>Zephyr</span>.<span>Javascript</span>.<span>Typescript</span>.<span>Node.JS</span>.<span>Jest</span>.<span>COAP</span>
+    </div>
+    <h3>Royal Mail - (Feb 2017 - Jul 2018), Contract Software Architect / Developer</h3>
+    <span class="intro">
+    Worked as a Software Architect and lead Engineer, bridging the gap between the Data Science and Data Engineering teams. My role involved translating our Data Scientist's machine learning models
+    into scalable production prototypes. This encompassed handling the architecture and prototype development, eventually passing onto the Data Engineering team for concrete implementation. Primary technologies
+    were Scala, Spark, and Python, hosted on Microsoft Azure.
+    </span>
+    <ul>
+        <li>Introduced the containerized microservice paradigm to decompose the firm's algorithms into reusable services. This encompassed leveraging Docker and Kubernetes</li>
+        <li>Architected a generic data ingestion and visualization framework to seamlessly onboard
+            data sources and datasets for analysis by the business. I leveraged Elasticsearch, Logstash, Kibana, and RDBMS.
+        </li>
+        <li>Led the rewrite of an IoT backend Spark application used for tracking postmen and computing derivative datasets for
+            business analyses and route optimizations. The redesigned solution significantly improved maintainability and performance, reducing
+            runtime from 10 hours on a 20-node cluster to 30 minutes on 2 nodes.
+        </li>
+        <li>Architected a distributed ad hoc delivery route optimization engine using the Large Neighborhood
+            Search algorithm, aiming to handle concurrent processing across hundreds of delivery hubs. AKKA, Scala, Docker and
+            Kubernetes were utilized.
+        </li>
+        <li>Designed and prototyped an enhanced and more accurate version of the 'Estimated Delivery Window' application. This leverages GPS
+            data from postmen's PDAs to improve static-route traversal prediction accuracy. It replaced the original version based on regression algorithms
+            exercised on sparse and minimal historical delivery events.
+        </li>
+    </ul>
+    <div class="highlight">
+        <span>Scala</span>.<span>Java</span>.<span>Cloud</span>.<span>Azure</span>.<span>Microservices</span>.<span>Concurrency</span>.<span>Distributed Systems</span>.<span>Software Architecture</span>.<span>SQL</span>.<span>NoSQL</span>.<span>Docker</span>.<span>Kubernetes</span>.<span>Machine Learning</span>.<span>ElasticSearch</span>.<span>LogStash</span>.<span>Kibana</span>.<span>REST</span>.<span>Akka</span>.<span>Hadoop</span>.<span>HBase</span>.<span>Apache Phoenix</span>.<span>Hive</span>.<span>Python</span>.<span>GIT</span>.<span>SBT</span>.<span>Linux</span>.<span>Agile</span>.<span>Scrum</span>
+    </div>
+    <h3>Goldman Sachs - Contract Software Engineer (Jan 2015 - Feb 2017)</h3>
+    <span class="intro">
+    Worked on a Regulatory Reporting and Trade Reconciliation tiered application
+    utilizing Java, Hadoop, Spark, and Scala. The tiers were a componentization of the different phases of the processing flow into cohesive modules.
+    </span>
+    <ul>
+        <li>Designed the Java module that ingests trade submission reports sourced from the Regulator into Hadoop. Overcame
+            the challenge of processing deeply malformed CSV files, transforming them into Avro files in HDFS for
+            downstream processing. Avro was the natural choice to accommodate schema evolution.
+        </li>
+        <li>Refactored, enhanced, and parallelized a downstream Java module responsible for generating derivative
+            projections of the curated trade reports for analytic and reconciliation flows. Employed advanced concurrency techniques such as Phasers to mimic count up/down latches.
+        </li>
+        <li>Reimplemented the module for generating a compacted corpus of trade submissions (to the regulator). This
+            involved rewriting and migrating the implementation from Hive scripts to Spark + Scala. This reduced execution
+            time from 2 hours to 15 minutes.
+        </li>
+        <li>Designed and developed a multithreaded Java application for collecting metrics from HA Proxy instances that
+            fronted document store services. The collected metrics were then submitted to a bespoke application for
+            charting and analysis.
+        </li>
+        <li>Designed and implemented a Scala application for cross-cluster data copying and synchronization in Hadoop.
+        </li>
+        <li>Revised an ingestion pipeline responsible for sourcing data from Elasticsearch into Hadoop to generate business reports. Adopted a REST-centric approach, moving away from a deprecated
+            Java API.
+        </li>
+    </ul>
+    <div class="highlight">
+        <span>Scala</span>.<span>Java</span>.<span>Microservices</span>.<span>Concurrency</span>.<span>Multithreading</span>.<span>Distributed Systems</span>.<span>Spark</span>.<span>NoSQL</span>.<span>REST</span>.<span>ElasticSearch</span>.<span>Spring</span>.<span>Hadoop</span>.<span>HBase</span>.<span>Apache Phoenix</span>.<span>Hive</span>.<span>Sqoop</span>.<span>TDD</span>.<span>Subversion</span>.<span>Jenkins</span>.<span>Maven</span>.<span>Linux</span>
+    </div>
+    <h3>Hotels.com / Expedia - Contract Software Engineer (Dec 2012 - Feb 2014)</h3>
+    <span class="intro">
+    At Hotels.com, an Expedia company specializing in online hotel booking, I worked on the server-side integration
+    team, building Java microservices to source data from external providers and generate derivative content for the
+    frontend UI. Services were exposed via REST+JSON endpoints. Upstream consumption was via REST and SOAP services.
+    </span>
+    <ul>
+        <li>Designed a distributed cache powered by Cassandra to store hotel data fetched from content providers via SOAP webservices.</li>
+        <li>Implemented a data loader that populated guest reviews and pricing data into a Solr index. These data
+            loaders, written in Java, pre-populated the Solr search indices with hotel content summaries to power search functionalities and filtering.
+        </li>
+        <li>Introduced Spring Integration to simplify the architecture of our suite of applications.</li>
+        <li>Implemented pricing strategies tailored for different geographic regions to align with business and
+            legal requirements. This involved interfacing with an external pricing repository and orchestrating
+            pertinent calculations on demand.
+        </li>
+        <li>Developed the REST client library used by frontend teams to integrate with our backend API. Implementation was in
+            Java</li>
+    </ul>
+    <div class="highlight">
+        <span>Java</span>.<span>Spring</span>.<span>Microservices</span>.<span>iBatis</span>.<span>RDBMS</span>.<span>JDBC</span>.<span>JAXP</span>.<span>WebServices (REST + SOAP)</span>.<span>SQL</span>.<span>NoSQL</span>.<span>JMX</span>.<span>Cassandra</span>.<span>Solr</span>.<span>Maven</span>.<span>TDD</span>.<span>Perforce</span>.<span>Jenkins</span>.<span>Linux</span>.<span>Agile</span>.<span>Kanban</span>
+    </div>
+    <h3>Various Roles - Software Engineer (Jul 2007 - Dec 2012)</h3>
+    <span class="intro">
+    During this period, I primarily worked as a server-side Java Developer implementing backends for web and
+    mobile applications. Main tenures were at the Financial Times, Telmap, VML, AKQA, as well as projects for the BBC.
+    </span>
+    <ul></ul>
+    <div class="highlight">
+        <span>Java</span>.<span>Spring</span>.<span>Hibernate</span>.<span>JAXP</span>.<span>WebServices (REST + SOAP)</span>.<span>JDBC</span>.<span>Lucene</span>.<span>Maven</span>.<span>TDD</span>.<span>Subversion</span>.<span>Jenkins</span>.<span>Linux</span>.<span>Agile</span>.<span>Scrum</span>
+    </div>
+</section>
+<section>
+    <h2>QUALIFICATIONS AND COURSES</h2>
+    <span class="intro">
+    I am educated to Masters level, have completed multiple online courses, and hold several certifications as listed further below. Notable achievements include:
+    </span>
+    <ul>
+        <li>Came second in a national Mathematics Olympiad.</li>
+        <li>Wrote a checkers playing AI program that battled the online Chinook to draw.</li>
+    </ul>
+    <div class="highlight">
+        <span>MSc. Advanced Software Engineering (Distinction) - King's College London</span>.<span>Machine Learning - Coursera</span>.<span>Functional Scala Specialization - Coursera</span>.<span>AWS Certified Solutions Architect (Associate)</span>.<span>Certified Java Developer</span>
+    </div>
+</section>
+</body>
